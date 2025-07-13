@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" preserve-order="true">
+    <test verbose="2" preserve-order="true" name="Test Set 1">
+        <classes>
+            <class name="TC_01" />
+            <class name="CreateAccount" />
+            <class name="TC_02" />
+            <class name="TC_03" />
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="Test Set 2">
+        <classes>
+            <class name="CreateAccount" />
+            <class name="TC_04" />
+        </classes>
+    </test>
+</suite>
