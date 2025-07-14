@@ -7,19 +7,6 @@
             <class name="TC_11"/>
             <class name="TC_12"/>
             <class name="TC_13"/>
-<suite name="All Test Suite" preserve-order="true">
-    <test verbose="2" preserve-order="true" name="Test Set 1">
-        <classes>
-            <class name="TC_01" />
-            <class name="CreateAccount" />
-            <class name="TC_02" />
-            <class name="TC_03" />
-        </classes>
-    </test>
-    <test verbose="2" preserve-order="true" name="Test Set 2">
-        <classes>
-            <class name="CreateAccount" />
-            <class name="TC_04" />
         </classes>
     </test>
 </suite>

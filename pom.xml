@@ -15,19 +15,6 @@
         <selenium.version>4.33.0</selenium.version>
     </properties>
 
-
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>org.example</groupId>
-    <artifactId>selenium_tasks</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <properties>
-        <surefire.parallel>1</surefire.parallel>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <selenium.version>4.33.0</selenium.version>
-    </properties>
     <repositories>
         <repository>
             <id>sonatype-nexus-snapshots</id>
@@ -47,16 +34,11 @@
             <scope>test</scope>
         </dependency>
 
-
-    <dependencies>
-
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>4.33.0</version>
         </dependency>
-
-
 
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -64,13 +46,13 @@
             <version>4.33.0</version>
         </dependency>
 
-
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
             <version>5.13.1</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>com.titusfortner</groupId>
             <artifactId>selenium-logger</artifactId>
@@ -83,11 +65,13 @@
             <version>7.9.0</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>com.aventstack</groupId>
             <artifactId>extentreports</artifactId>
             <version>5.1.1</version>
         </dependency>
+
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
@@ -95,6 +79,7 @@
             <scope>compile</scope>
         </dependency>
     </dependencies>
+
     <build>
         <plugins>
             <plugin>
@@ -110,4 +95,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>
