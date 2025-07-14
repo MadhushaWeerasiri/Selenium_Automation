@@ -29,21 +29,28 @@ public class TC_12 {
 
     @Test
     public void testAddProductsToCart() {
+
+        // Verify that home page is visible successfully
         homePage.verifyHomePageIsVisible();
         System.out.println("Step 1: Home page is visible successfully");
 
+        // Click 'Products' button
         productPage.clickProductsButton();
         System.out.println("Step 2: Clicked on 'Products' button");
 
+        // Hover over first product and click 'Add to cart'
         productPage.addFirstProductToCart();
         System.out.println("Step 3: First product added to cart and continued shopping");
 
+        // Hover over second product and click 'Add to cart'
         productPage.addSecondProductToCartAndViewCart();
         System.out.println("Step 4: Second product added to cart and navigated to cart page");
 
+        // Verify both products are added to Cart
         cartPage.verifyProductsInCart();
         System.out.println("Step 5: Verified both products are added to cart");
 
+        // Verify their prices, quantity and total price
         cartPage.verifyPricesQuantitiesAndTotals();
         System.out.println("Step 6: Verified prices, quantities, and total prices are correct");
     }
