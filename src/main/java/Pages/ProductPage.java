@@ -54,7 +54,6 @@ public class ProductPage {
         wait.until(ExpectedConditions.elementToBeClickable(btn_viewCart)).click();
     }
 
-
     public void clickViewProduct() {
         wait.until(ExpectedConditions.elementToBeClickable(viewProductBtn)).click();
     }
