@@ -66,7 +66,7 @@ public class HomePage {
         System.out.println("'SUBSCRIPTION' section is visible.");
     }
 
-    // Scroll to the very top of the page
+    // Scroll to the very top of the page without using button
     public void scrollUp() {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollTo({ top: 0, behavior: 'smooth' });");
@@ -86,6 +86,7 @@ public class HomePage {
         System.out.println(" Banner text is visible: " + bannerText.getText());
     }
 
+    // to scroll up using the button
     public void scrollUpWithButton(){
         WebElement scrollUpButton = driver.findElement(By.xpath ("//*[@id='scrollUp']"));
         scrollUpButton.click();
