@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="E:/Internship/SQA Programe/AutomationExercise">
+        <classes>
+            <class name="TC_10"/>
+            <class name="TC_11"/>
+            <class name="TC_12"/>
+            <class name="TC_13"/>
+        </classes>
+    </test>
+</suite>
