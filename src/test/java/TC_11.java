@@ -23,21 +23,27 @@ public class TC_11 {
     @Test
     public void testSubscriptionInCartPage() {
 
+        // Verify that home page is visible successfully
         homePage.verifyHomePageIsVisible();
         System.out.println("Step 1: Home page is visible successfully");
 
+        // Click 'Cart' button
         homePage.navigateToCart();
         System.out.println("Step 2: Navigated to Cart page");
 
+        // Scroll down to footer
         cartPage.scrollToFooter();
         System.out.println("Step 3: Scrolled to footer");
 
+        // Verify text 'SUBSCRIPTION'
         cartPage.verifySubscriptionText();
         System.out.println("Step 4: 'SUBSCRIPTION' text is visible");
 
+        // Enter email address in input and click arrow button
         cartPage.enterEmailAndSubscribe("oshiwijewickrama28@gmail.com");
         System.out.println("Step 5: Email entered and subscribe button clicked");
 
+        // Verify success message 'You have been successfully subscribed!' is visible
         cartPage.verifySubscriptionSuccessMessage();
         System.out.println("Step 6: Subscription success message displayed");
     }
